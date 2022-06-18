@@ -3,8 +3,6 @@ from machine import Pin, I2C
 from utime
 WIDTH=128
 HEIGHT=32
-
-adc= machine.ADC(28)
 while True:
     reading1= adc.read(Pin(A1))
     reading2= adc.read(Pin(A2))
