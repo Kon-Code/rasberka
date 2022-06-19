@@ -17,15 +17,15 @@ while True:
     reading1= adc.read_u16()
     reading2= adc2.read_u16()
 #przeliczamy wartości z aproksymacji
-temp1=  (-0,6218*reading1 + 27,001)
-temp2= (-0,6218*reading2 + 27,001)
+    temp1=  (-0,6218*reading1 + 27,001)
+    temp2= (-0,6218*reading2 + 27,001)
 #czysicimy niepotrzebne znaki
-oled.fill(0) 
-oled.invert(True)
-oled.text("temperatura pierwszego układu: "+ temp1,5,8)
-oled.text("temperatura drugiego układu: "+ temp2,5,18)     
-oled.show();
-utime.slepp(0.1)
+    oled.fill(0) 
+    oled.invert(True)
+    oled.text("temperatura pierwszego układu: "+ temp1,5,8)
+    oled.text("temperatura drugiego układu: "+ temp2,5,18)     
+    oled.show();
+    utime.slepp(0.1)
           
 
 
