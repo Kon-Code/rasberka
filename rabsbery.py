@@ -11,7 +11,7 @@ adc2= ADC(31)
 i2C= I2C(0,scl=Pin(5), sda=Pin(4), freq=20000)
 
 # konfigurujemy oled
-oled=SSD1306_I2C(WIDTH,HEIGHT,i2c) 
+oled=SSD1306_I2C(WIDTH,HEIGHT,i2c,addr=0x3C) 
 
 while True:
     reading1= adc.read_u16()
